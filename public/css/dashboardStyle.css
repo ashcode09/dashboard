@@ -1,6 +1,17 @@
 body {
 }
 
+.navbar {
+  background-color: white;
+  font-size: 12px;
+  border-style: none;
+}
+
 .sample-image {
   width: 25%;
+  border-bottom: 4px solid #4cbfee;
+}
+
+.navbar-default .navbar-nav>li.active-nav>a {
+  color: #3c91b6;
 }
