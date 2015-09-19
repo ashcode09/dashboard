@@ -25,7 +25,7 @@ body {
 .launchers {
   background-color: white;
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 
 .jumbotron {
@@ -49,4 +49,24 @@ p.launch-title {
   padding-top: 40px;
   font-size: 14px;
   text-align: center;
+}
+
+div.launchers p.tips-tutorials {
+  text-align: center;
+  font-size: 11px;
+}
+
+.bottom-display {
+  width: 100%;
+}
+
+div.left-display {
+  padding-left: 10%;
+  float: left;
+  width: 30%;
+}
+
+div.right-display {
+  float: right;
+  width: 60%;
 }
