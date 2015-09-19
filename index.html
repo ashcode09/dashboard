@@ -1,12 +1,14 @@
 <!doctype html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <link href="public/css/dashboardStyle.css" rel="stylesheet">
+    <script src="js/app.js"></script>
   </head>
-  <body>
+  <body ng-app="Dashboard">
     <div class="container">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -78,8 +80,8 @@
       <div id="left-display">
         <ul>
           <li>About DB Impress eXtra</li>
-          <li>Acessing DB Impresa eXtra</li>
-          <li>Managing my Acount</li>
+          <li>Accessing DB Impresa eXtra</li>
+          <li>Managing my Account</li>
         </ul>
       </div>
       <div id="right-display">
