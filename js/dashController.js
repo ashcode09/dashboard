@@ -1,0 +1,3 @@
+dashboardApp.controller('dashController', [function () {
+
+}]);

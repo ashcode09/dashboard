@@ -4,9 +4,11 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <link href="public/css/dashboardStyle.css" rel="stylesheet">
     <script src="js/app.js"></script>
+    <script src="js/dashController.js"></script>
   </head>
   <body ng-app="Dashboard">
     <div class="container">
@@ -17,12 +19,12 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active-nav"><a href="#">My Dashboard</a></li>
-              <li><a href="#">My Account</a></li>
-              <li><a href="#">My Payments</a></li>
+              <li class="active-nav"><a href="/">My Dashboard</a></li>
+              <li><a href="/">My Account</a></li>
+              <li><a href="/">My Payments</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#">Log Out</a></li>
+              <li><a href="/">Log Out</a></li>
             </ul>
           </div>
         </div>
@@ -79,12 +81,14 @@
     <div class="container-fluid">
       <div id="left-display">
         <ul>
-          <li>About DB Impress eXtra</li>
-          <li>Accessing DB Impresa eXtra</li>
-          <li>Managing my Account</li>
+          <li><a href="/#/about">About DB Impress eXtra</a></li>
+          <li><a href="/#/accessing">Accessing DB Impresa eXtra</a></li>
+          <li><a href="/#/manage-account">Managing my Account</a></li>
         </ul>
       </div>
       <div id="right-display">
+        <div ng-view></div>
+        Here I am
       </div>
     </div>
     
