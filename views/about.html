@@ -1,32 +1,17 @@
-<table ng-repeat="eachQuestionAndAnswer in exampleQuestions">
-  <tr class="allTheQuestions">
-    <td>
-      {{eachQuestionAndAnswer.Question}}
-    </td>
-    <td>
-      <span class="glyphicon glyphicon-chevron-down"></span>
-    </td>
-  </tr>
-  <tr>
-    <td class="allTheAnswers">
-      {{eachQuestionAndAnswer.Answer}}
-    </td>
-  </tr>
-</table>
-
-<script>
-  $('.allTheAnswers').hide();
-</script>
-
-
-<!-- PLAN OF ACTION
-
-click on one of the '.allTheQuestions'
-
-remove class 'active' from all td.allTheAnswers
-
-add class 'active' to the next tr > td.allTheAnswers
-
-make it so that everything with class 'active' is shown (this should mean that only one of the answers is shown at a time)
-
--->
+<div>
+  <table class="questionsAndAnswersTable" ng-repeat="eachQuestionAndAnswer in exampleQuestions">
+    <tr class="allTheQuestions">
+      <td class="questionAndAnswerColumn">
+        <a ng-click="showAnswer(eachQuestionAndAnswer)">{{eachQuestionAndAnswer.question}}</a>
+      </td>
+      <td class="arrowIcon">
+        <a><span class="glyphicon glyphicon-chevron-down"></span></a>
+      </td>
+    </tr>
+    <tr class="allTheAnswers" id="{{$index}}" ng-show="eachQuestionAndAnswer.show" ng-hide="eachQuestionAndAnswer.show === false">
+      <td class="questionAndAnswerColumn">
+        {{eachQuestionAndAnswer.answer}}
+      </td>
+    </tr>
+  </table>
+</div>

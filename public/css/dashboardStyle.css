@@ -70,3 +70,11 @@ div.right-display {
   float: right;
   width: 60%;
 }
+
+.questionsAndAnswersTable {
+  width: 100%;
+}
+
+.questionAndAnswerColumn {
+  width: 80%;
+}
