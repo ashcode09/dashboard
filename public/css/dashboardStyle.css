@@ -1,3 +1,6 @@
+
+
+
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
@@ -19,8 +22,9 @@ body {
 
 .title {
   color: #4093D6;
-  font-size: 20px;
+  font-size: 30px;
   padding-left: 15px;
+  padding-bottom: 20px;
 }
 
 .launchers {
@@ -33,7 +37,7 @@ body {
   background-color: #E3E8E4;
 }
 
-table {
+table.launch-table {
   border-collapse: separate;
   border-spacing: 20px;
 }
@@ -76,13 +80,17 @@ div.right-display {
   width: 100%;
 }
 
-.questionAndAnswerColumn {
+.question-and-answer-column {
   width: 80%;
+}
+
+.arrowIcon {
+  width: 20%;
 }
 
 @media (max-width: 900px) {
 
-  table, thead, tbody, th, td, tr { 
+  table, thead, tbody, th, td.launch-table-column, tr { 
     display: block; 
   }
 
@@ -90,11 +98,18 @@ div.right-display {
     height: 100%;
   }
 
-  td.launch-table {
-    border: none;
-    border-bottom: 1px solid #eee; 
-    position: relative;
-    padding-left: 50%;
+  div.left-display {
+    width: 100%;
+  }
+
+  div.right-display {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .question-and-answer-column {
+    width: 100%;
   }
 }
 

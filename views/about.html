@@ -1,17 +1,16 @@
-<div>
-  <table class="questionsAndAnswersTable" ng-repeat="eachQuestionAndAnswer in exampleQuestions">
-    <tr class="allTheQuestions">
-      <td class="questionAndAnswerColumn">
-        <a ng-click="showAnswer(eachQuestionAndAnswer)">{{eachQuestionAndAnswer.question}}</a>
-      </td>
-      <td class="arrowIcon">
-        <a><span class="glyphicon glyphicon-chevron-down"></span></a>
-      </td>
-    </tr>
-    <tr class="allTheAnswers" ng-show="eachQuestionAndAnswer.show" ng-hide="eachQuestionAndAnswer.show === false">
-      <td class="questionAndAnswerColumn">
-        {{eachQuestionAndAnswer.answer}}
-      </td>
-    </tr>
-  </table>
-</div>
+
+<table class="questionsAndAnswersTable" ng-repeat="eachQuestionAndAnswer in exampleQuestions">
+  <tr>
+    <td class="question-and-answer-column">
+      <a ng-click="showAnswer(eachQuestionAndAnswer)">{{eachQuestionAndAnswer.question}}</a>
+    </td>
+    <td class="arrowIcon">
+      <a><span class="glyphicon glyphicon-chevron-down"></span></a>
+    </td>
+  </tr>
+  <tr class="allTheAnswers" ng-show="eachQuestionAndAnswer.show" ng-hide="eachQuestionAndAnswer.show === false">
+    <td class="question-and-answer-column">
+      {{eachQuestionAndAnswer.answer}}
+    </td>
+  </tr>
+</table>
