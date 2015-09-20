@@ -21,8 +21,12 @@ dashboardApp.controller('dashController', ['$scope', function ($scope) {
   };
 
   $scope.showAnswer = function(questionClicked) {
-    $scope.hideAllAnswers();
-    questionClicked.show = true;
+    if (questionClicked.show === true) {
+      $scope.hideAllAnswers();
+    } else {
+      $scope.hideAllAnswers();
+      questionClicked.show = true;
+    };
   };
 
 }]);

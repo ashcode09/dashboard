@@ -1,4 +1,5 @@
 body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .navbar {
@@ -78,3 +79,30 @@ div.right-display {
 .questionAndAnswerColumn {
   width: 80%;
 }
+
+@media (max-width: 900px) {
+
+  table, thead, tbody, th, td, tr { 
+    display: block; 
+  }
+
+  .launchers {
+    height: 100%;
+  }
+
+  td.launch-table {
+    border: none;
+    border-bottom: 1px solid #eee; 
+    position: relative;
+    padding-left: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
