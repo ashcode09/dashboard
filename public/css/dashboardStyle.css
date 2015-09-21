@@ -22,7 +22,7 @@ body {
 .title {
   color: #4093D6;
   font-size: 30px;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-bottom: 20px;
   padding-top: 30px;
 }
@@ -68,13 +68,19 @@ div.launchers p.tips-tutorials {
 div.left-display {
   padding-left: 5%;
   float: left;
-  width: 25%;
+  width: 30%;
+}
+
+div.left-display a {
+  color: #777;
 }
 
 div.right-display {
   float: right;
   width: 70%;
   font-size: 11px;
+  color: #777;
+  margin-top: 34px;
 }
 
 table.questions-and-answers-table {
@@ -100,18 +106,10 @@ div.left-display li {
   background-size: 3px 1px;
   background-repeat: repeat-x;
   list-style-type: none;
-  width: 100%;
+  width: 85%;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 11px;
-}
-
-div.left-display a {
-  color: #777;
-}
-
-div.right-display {
-  color: #777;
 }
 
 .each-question-row {
@@ -192,23 +190,6 @@ div.right-display {
     margin-top: 30px;
   }
 }
-
-/*@media (max-width: 900px) {
-
-  .navigation-bar {
-    margin: 0;
-    margin-top: 10px;
-  }
-
-  .navbar-nav li  {
-    width: 85%;
-    text-align: left;
-    border-bottom: 1px solid #777;
-  }
-}*/
-
-
-
 
 
 

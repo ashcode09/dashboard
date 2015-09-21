@@ -16,6 +16,6 @@ dashboardApp.config(['$routeProvider',
         controller: 'dashController'
       }).
       otherwise({
-        redirectTo: '/'
+        redirectTo: '/about'
       });
 }]);
