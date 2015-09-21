@@ -1,11 +1,11 @@
 
-<table class="questionsAndAnswersTable" ng-repeat="eachQuestionAndAnswer in exampleQuestions">
-  <tr>
+<table class="questions-and-answers-table" ng-repeat="eachQuestionAndAnswer in exampleQuestions">
+  <tr class="each-question-row" ng-click="showAnswer(eachQuestionAndAnswer)">
     <td class="question-and-answer-column">
-      <a ng-click="showAnswer(eachQuestionAndAnswer)">{{eachQuestionAndAnswer.question}}</a>
+      {{eachQuestionAndAnswer.question}}
     </td>
     <td class="arrowIcon">
-      <a><span class="glyphicon glyphicon-chevron-down"></span></a>
+      <span class="glyphicon glyphicon-chevron-down glyph"></span>
     </td>
   </tr>
   <tr class="allTheAnswers" ng-show="eachQuestionAndAnswer.show" ng-hide="eachQuestionAndAnswer.show === false">

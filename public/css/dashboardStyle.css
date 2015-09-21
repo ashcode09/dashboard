@@ -1,13 +1,12 @@
 
 
-
 body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .navbar {
   background-color: white;
-  font-size: 12px;
+  font-size: 0.9em;
   border-style: none;
 }
 
@@ -25,12 +24,13 @@ body {
   font-size: 30px;
   padding-left: 15px;
   padding-bottom: 20px;
+  padding-top: 30px;
 }
 
 .launchers {
   background-color: white;
   width: 100%;
-  height: 250px;
+  height: 280px;
 }
 
 .jumbotron {
@@ -66,29 +66,85 @@ div.launchers p.tips-tutorials {
 }
 
 div.left-display {
-  padding-left: 10%;
+  padding-left: 5%;
   float: left;
-  width: 30%;
+  width: 25%;
 }
 
 div.right-display {
   float: right;
-  width: 60%;
+  width: 70%;
+  font-size: 11px;
 }
 
-.questionsAndAnswersTable {
-  width: 100%;
+table.questions-and-answers-table {
+  width: 90%;
 }
 
 .question-and-answer-column {
-  width: 80%;
+  width: 90%;
 }
 
 .arrowIcon {
-  width: 20%;
+  text-align: right;
+  width: 10%;
+}
+
+.jumbotron {
+  margin-bottom: 10px;
+}
+
+div.left-display li {
+  background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 3px 1px;
+  background-repeat: repeat-x;
+  list-style-type: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 11px;
+}
+
+div.left-display a {
+  color: #777;
+}
+
+div.right-display {
+  color: #777;
+}
+
+.each-question-row {
+  border-top: 1px solid;
+}
+
+.glyph {
+  color: black;
+}
+
+.navbar-nav {
+  margin-left: 10%;
+  margin-top: 7px;
+}
+
+.container-fluid {
+  margin-top: 40px;
+}
+
+@media (max-width: 990px) {
+  body {
+    background-color: blue;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 900px) {
+  body {
+    background-color: green;
+  }
 
   table, thead, tbody, th, td.launch-table-column, tr { 
     display: block; 
@@ -111,9 +167,45 @@ div.right-display {
   .question-and-answer-column {
     width: 100%;
   }
+
+  div.container-fluid {
+    width: 100%;
+    text-align: center;
+  }
+
 }
 
+@media (max-width: 770px) {
+  body {
+    background-color: yellow;
+  }
 
+  li.nav-space {
+    display: none;
+  }
+
+  .navbar-nav {
+    margin: 0;
+  }
+
+  div.navigation-bar {
+    margin-top: 30px;
+  }
+}
+
+/*@media (max-width: 900px) {
+
+  .navigation-bar {
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-nav li  {
+    width: 85%;
+    text-align: left;
+    border-bottom: 1px solid #777;
+  }
+}*/
 
 
 
