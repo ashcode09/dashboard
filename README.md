@@ -5,7 +5,7 @@ Here I am taking a design and turning it into functional code
 
 *The design:*
 
-![screenshot of design](/public/images/design/png)
+![screenshot of design](/public/images/design.png)
 
 *The finished piece*
 
