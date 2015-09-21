@@ -5,31 +5,20 @@
     <link href="public/css/dashboardStyle.css" rel="stylesheet">
   </head>
   <body ng-app="Dashboard" ng-controller="dashController as ctrl">
-    <div class="wrapper">
-      <div class="container">
-        <div ng-include src="'views/partials/header-and-nav.html'"></div>
-        <div class="title">My Dashboard</div>
-      </div>
-      <div ng-include src="'views/partials/launchers.html'"></div>
-      <table class="bottom-display">
-        <tr>
-          <div class="left-display">
-          <ul>
-            <li><a href="/#/about">About DB Impresa eXtra</a></li>
-            <li><a href="/#/accessing">Accessing DB Impresa eXtra</a></li>
-            <li><a href="/#/manage-account">Managing my Account</a></li>
-          </ul>
-          </div>
-          <div class="right-display">
-            <div ng-view></div>
-          </div>
-        </tr>
-      </table>
-      <div class="push"></div>
+    <div class="container">
+      <div ng-include src="'views/partials/header-and-nav.html'"></div>
+      <div class="title">My Dashboard</div>
     </div>
-
+    <div ng-include src="'views/partials/launchers.html'"></div>
+    <table class="bottom-display">
+      <tr>
+        <div ng-include src="'views/partials/bottom-left-display.html'"></div>
+        <div class="right-display">
+          <div ng-view></div>
+        </div>
+      </tr>
+    </table>
     <footer ng-include src="'views/partials/footer.html'"></footer>
-
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>

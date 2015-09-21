@@ -1,7 +1,7 @@
 Dashboard
 =========
 
-Here I am taking a design and turning it into functional code
+Taking a design and turning it into functional code!
 
 *The design:*
 
@@ -9,15 +9,7 @@ Here I am taking a design and turning it into functional code
 
 *The finished piece*
 
-
-
-
-SCREENSHOT OF WHAT I'VE DONE
-
-
-
-
-Visit app on heroku (if choose to have it on heroku)
+![screenshot of my page](/public/images/my-page.png)
 
 
 Tech Used
